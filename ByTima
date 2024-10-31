@@ -99,7 +99,7 @@ PhantomForcesWindow = Library:NewWindow("Тимоша Скрипт " .. ThisActu
 
 WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
 --[[ Hub Script ]] --
-WeLoveCat5:CreateToggle("Фарм Бананов", function(value)
+WeLoveCat:CreateToggle("Фарм Бананов", function(value)
 loopActive = value
     spawn(function()
         while loopActive do 
