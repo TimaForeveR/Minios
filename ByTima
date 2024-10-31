@@ -99,8 +99,11 @@ PhantomForcesWindow = Library:NewWindow("Тимоша Скрипт " .. ThisActu
 
 WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
 --[[ Hub Script ]] --
-WeLoveCat:CreateButton("Виверн", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/wyvernleaker/WYVERN/main/WYVERN.lua",true))()
-Sound(6150774030, 0.1)
-Notify("Загрузка Виверна...",3)
-  
+WeLoveCat5:CreateToggle("Фарм Бананов", function(value)
+loopActive = value
+    spawn(function()
+        while loopActive do 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14.41202163696289, 440.9050598144531, -296.10614013671875)
+wait(1)
+end
 end)
