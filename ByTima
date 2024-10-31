@@ -102,8 +102,7 @@ WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
 WeLoveCat:CreateToggle("Фарм Бананов", function(value)
 loopActive = value
     spawn(function()
-        while loopActive do 
+        while loopActive and task.wait(1) do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14.41202163696289, 440.9050598144531, -296.10614013671875)
-wait(1)
 end
 end)
