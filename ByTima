@@ -95,14 +95,12 @@ function ThisActuallyCool()
     end
 end
 
-PhantomForcesWindow = Library:NewWindow("Тимоша Скрипт " .. ThisActuallyCool())
+PhantomForcesWindow = Library:NewWindow("Тимоша Миньоны " .. ThisActuallyCool())
 
-WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
---[[ Hub Script ]] --
-WeLoveCat:CreateToggle("Фарм Бананов", function(value)
+tima = PhantomForcesWindow:NewSection("Авто Фарм")
+tima:CreateToggle("Фарм Бананов", function(value)
 loopActive = value
-    spawn(function()
-        while loopActive and task.wait(1) do
+        while loopActive and task.wait(1,5) do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14.41202163696289, 440.9050598144531, -296.10614013671875)
 end
 end)
